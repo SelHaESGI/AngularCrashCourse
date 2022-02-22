@@ -5,7 +5,10 @@ import {Task} from '../Task';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json'
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Methods': 'PUT, GET, POST',
+    'Access-Control-Allow-Headers':'Origin, X-Requested-With, Content-Type, Accept'
   })
 }
 
